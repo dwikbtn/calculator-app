@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,5 +35,51 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: #3a4764;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator-main {
+  margin-top: 10%;
+  width: 35rem;
+}
+
+.calculator-header {
+  margin-bottom: 16px;
+}
+
+.calculator-header h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.calculator-screen {
+  background-color: #182034;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  justify-items: center;
+}
+
+.calculator-screen span {
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
 }
 /*# sourceMappingURL=style.css.map */

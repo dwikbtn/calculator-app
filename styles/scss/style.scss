@@ -1,2 +1,37 @@
-@import "_reset.scss";
-@import "_variable.scss";
+@import "reset";
+@import "variable";
+@import "component";
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: $main-bg-color;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator-main {
+  margin-top: 10%;
+  width: 35rem;
+}
+
+.calculator-header {
+  margin-bottom: 16px;
+  h1 {
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.calculator-screen {
+  background-color: $screen-bg-color;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
+  span {
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-items: center;
+  }
+}
