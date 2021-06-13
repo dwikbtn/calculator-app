@@ -24,9 +24,11 @@ body {
 
 .calculator-screen {
   background-color: $screen-bg-color;
+  height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-radius: 10px;
   span {
     display: flex;
     align-self: center;
@@ -35,4 +37,28 @@ body {
     color: white;
     margin: 10px;
   }
+}
+
+.calculator-keypad {
+  margin-top: 10px;
+  font-size: 32px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  padding: 2rem;
+  background-color: $keypad-bg-color;
+  border-radius: 10px;
+}
+
+.calculator__button {
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  filter: drop-shadow(0px 5px 0px hsl(28, 16%, 65%));
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 32px;
 }
