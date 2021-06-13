@@ -115,4 +115,24 @@ body {
   border-radius: 10px;
   font-size: 32px;
 }
+
+.calculator__button[data-value="delete"],
+.calculator__button[data-value="reset"] {
+  background-color: #637097;
+  -webkit-filter: drop-shadow(0px 5px 0px #404e72);
+          filter: drop-shadow(0px 5px 0px #404e72);
+  color: white;
+}
+
+.calculator__button[data-value="reset"],
+.calculator__button[data-value="="] {
+  grid-column: span 2;
+}
+
+.calculator__button[data-value="="] {
+  background-color: #d03f2f;
+  -webkit-filter: drop-shadow(0px 5px 0px #93261a);
+          filter: drop-shadow(0px 5px 0px #93261a);
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
