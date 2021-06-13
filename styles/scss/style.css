@@ -70,16 +70,20 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .calculator-screen span {
-  font-weight: 700;
-  font-size: 48px;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

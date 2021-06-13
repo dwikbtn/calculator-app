@@ -26,12 +26,13 @@ body {
   background-color: $screen-bg-color;
   display: flex;
   justify-content: flex-end;
-  justify-items: center;
+  align-items: center;
   span {
+    display: flex;
+    align-self: center;
     font-weight: 700;
     font-size: 48px;
     color: white;
-    display: flex;
-    justify-items: center;
+    margin: 10px;
   }
 }
