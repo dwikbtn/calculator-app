@@ -21,8 +21,11 @@ const handleButton = (event) => {
   }
 };
 
-const deleteDisplay = (value) => {
-  console.log("delete");
+const deleteDisplay = () => {
+  const display = document.getElementById("screen-text");
+  if (display.lastChild != null) {
+    display.removeChild(display.lastChild);
+  }
 };
 
 const resetDisplay = (display) => {
@@ -36,4 +39,5 @@ const addToDisplay = (text) => {
   const display = document.getElementById("screen-text");
   const newdisplay = document.createTextNode(text);
   display.appendChild(newdisplay);
+  console.log(display);
 };
