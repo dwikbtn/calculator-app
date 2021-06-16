@@ -1,4 +1,4 @@
-const display = document.getElementById("screen-text");
+const firstNum = document.getElementById("firstNum");
 
 const buttons = document.getElementsByClassName("calculator__button");
 for (let i = 0; i < buttons.length; i++) {
@@ -17,6 +17,7 @@ const handleButton = (event) => {
       break;
     case "=":
       calculate();
+
       break;
     default:
       addToDisplay(value);
@@ -24,13 +25,13 @@ const handleButton = (event) => {
 };
 
 const deleteDisplay = () => {
-  if (display.lastChild != null) {
+  if (firstNum.lastChild != null) {
     display.removeChild(display.lastChild);
   }
 };
 
 const resetDisplay = () => {
-  display.innerHTML = "";
+  firstNum.innerHTML = "";
 };
 
 const calculate = (value) => {
@@ -38,5 +39,5 @@ const calculate = (value) => {
 };
 const addToDisplay = (text) => {
   const newdisplay = document.createTextNode(text);
-  display.appendChild(newdisplay);
+  firstNum.appendChild(newdisplay);
 };
